@@ -26,10 +26,27 @@ class Customer(User):
 
         print("\n\nTotal Price: ", self.total)
 
-    def calculateBill(self):
+    def check_calculateBill(self):
 
         for ele in self.itemList:
             x = self.itemList[ele]
             self.total += x[2]
 
         return self.total
+
+    def check_itemExist(self, name):
+
+        if name in self.itemList:
+            return True
+        else:
+            return False
+
+    def check_value_in_item(self, name, inCart):
+
+        if name not in self.itemList:
+            return False
+        else:
+            if self.itemList[name] == inCart:
+                return True
+            else:
+                return False

@@ -4,5 +4,5 @@ class User:
         self.name = name
         self.customerId = customerID
 
-    def customerDetails(self):
+    def check_ustomerDetails(self):
         return [self.name, self.customerId]

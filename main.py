@@ -56,7 +56,7 @@ while True:
         continue
 
     elif choice == 2:
-        ob1.calculateBill()
+        ob1.check_calculateBill()
         print(ob1.viewBill())
         print("Total Number of Item: ", n)
         print("Customer Name: ", name, " Customer Id: ", id)
